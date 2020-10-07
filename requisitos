@@ -1,0 +1,31 @@
+REQUISITOS 
+
+RF:
+Utilizar marcadores.	
+Utilizar sistema de batalha por turnos.
+Presentear jogador com recompensas ao término das batalhas vencidas.
+
+RNF:
+Utilizar Vuforia.
+Utilizar Unity.
+Utilizar o Blender/3DSMAX para fazer a modelagem 3d.
+Exibir animações durante a batalha.
+Permitir que o usuário fuja da batalha.
+Permitir que o usuário aplique um ataque durante o seu turno.
+	
+TAREFAS:
+
+Confeccionar os marcadores.
+  Jardel e Sidnei.
+
+Criar os modelos 3d e animações.
+  Jardel e Sidnei.
+
+Programar a parte de realidade aumentada.
+  Leonardo e Gabriel
+		
+Programar os menus e a lógica do jogo.
+  Leonardo e Gabriel
+		
+Testar a aplicação e gravar um vídeo mostrando ela.
+  Jardel e Sidnei.
