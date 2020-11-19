@@ -4,6 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/inicio.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Batalha.unity
+    guid: c32bb3ebfc6d9d649a66d923204c27ea
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ebe029320c1f6ca4ab90570a20530468, type: 2}

@@ -9,8 +9,10 @@ public class Batalha : MonoBehaviour
 {
     public static Criatura Inimigo;
     public static Criatura Jogador;
-    public GameObject monster;
-    
+    public GameObject Golem;
+    public GameObject Dragao;
+    public static string Name;
+
     private static void Atacar(Criatura atacante, Criatura defensora)
     {
         var random = new System.Random();
@@ -44,20 +46,25 @@ public class Batalha : MonoBehaviour
     {
         var random = new System.Random().Next(1, 100);
 
-        if(40 <= random)
+        if (40 <= random)
             Utils.ChangeScene(ScenesNames.Inicio);
-        
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(monster, new Vector3(0, 0, 0), Quaternion.identity);
+
+        if (Name == "Inimigo1")
+            Dragao.GetComponent<Renderer>().enabled = false;
+        
+
+       if (Name == "inimigo2")
+            Golem.GetComponent<Renderer>().enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
