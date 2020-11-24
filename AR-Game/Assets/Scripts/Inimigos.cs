@@ -51,7 +51,7 @@ public class Inimigos
             Vida = 200,
             Nome = "Linguarudo",
             Dificuldade = Dificuldades.Dificil,
-            TrackerName = "Inimigo2"
+            TrackerName = "inimigo2"
         }) ;
 
         Criaturas.Add(new Criatura()
@@ -72,7 +72,7 @@ public class Inimigos
             Vida = 400,
             Nome = "Reginaldo",
             Dificuldade = Dificuldades.Impossivel,
-            TrackerName = "Inimigo3"
+            TrackerName = "inimigo3"
         });
     }
 }

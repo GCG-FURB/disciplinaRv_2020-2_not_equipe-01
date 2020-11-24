@@ -2,8 +2,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 public class Batalha : MonoBehaviour
 {
@@ -12,7 +13,26 @@ public class Batalha : MonoBehaviour
     public GameObject Golem;
     public GameObject Dragao;
     public static string Name;
+    // Start is called before the first frame update
+    void Start()
+    {
+        Name = Init.Name;
+        Inimigo = Inimigos.Criaturas.First(p => p.TrackerName == Name);
+        Jogador = Init.Jogador;
 
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Name == "Inimigo1")
+            Golem.SetActive(true);
+        
+        if (Name == "inimigo2")
+            Dragao.SetActive(true);
+        
+
+    }
     private static void Atacar(Criatura atacante, Criatura defensora)
     {
         var random = new System.Random();
@@ -50,21 +70,5 @@ public class Batalha : MonoBehaviour
             Utils.ChangeScene(ScenesNames.Inicio);
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-        if (Name == "Inimigo1")
-            Dragao.GetComponent<Renderer>().enabled = false;
-        
-
-       if (Name == "inimigo2")
-            Golem.GetComponent<Renderer>().enabled = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+   
 }

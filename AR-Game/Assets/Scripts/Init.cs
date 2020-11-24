@@ -11,10 +11,11 @@ public class Init : MonoBehaviour
 {
     public static Criatura Jogador;
     public GameObject Canvas;
+    public static string Name;
     // Start is called before the first frame update
     void Start()
     {
-        //Canvas.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -29,11 +30,7 @@ public class Init : MonoBehaviour
             if (tb.TrackableName == "Inimigo1" || tb.TrackableName == "inimigo2" || tb.TrackableName == "inimigo3")
             {
                 Canvas.SetActive(true);
-                Batalha.Inimigo = Inimigos.Criaturas.First(p => p.TrackerName == tb.TrackableName);
-                Batalha.Jogador = Jogador;
-                Batalha.Name = tb.TrackableName;
-                Utils.ChangeScene(ScenesNames.Batalha);
-
+                Name = tb.TrackableName;
             }
         }
     }
