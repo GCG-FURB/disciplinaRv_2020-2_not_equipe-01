@@ -9,13 +9,12 @@ using Vuforia;
 
 public class Init : MonoBehaviour
 {
-    public static Criatura Jogador;
     public GameObject Canvas;
     public static string Name;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Inimigos.InicializarInimigos();
     }
 
     // Update is called once per frame

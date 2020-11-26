@@ -28,7 +28,8 @@ public class Inimigos
             Defesa = 50,
             Esquiva = 5,
             Vida = 100,
-            Nome = "Roberto",
+            MaximaVida = 100,
+            Nome = "Golem",
             Dificuldade = Dificuldades.Facil,
             TrackerName = "Inimigo1"
         });
@@ -49,7 +50,8 @@ public class Inimigos
             Defesa = 80,
             Esquiva = 40,
             Vida = 200,
-            Nome = "Linguarudo",
+            MaximaVida = 200,
+            Nome = "Dragão",
             Dificuldade = Dificuldades.Dificil,
             TrackerName = "inimigo2"
         }) ;
