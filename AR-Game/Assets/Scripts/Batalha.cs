@@ -29,7 +29,9 @@ public class Batalha : MonoBehaviour
             Defesa = 45,
             Esquiva = 10,
             Vida = 200,
-            SkillPoints = 0
+            SkillPoints = 0,
+            MaximaVida = 200
+            
         };
     }
     // Update is called once per frame
@@ -66,6 +68,11 @@ public class Batalha : MonoBehaviour
         var txt = "";
         var random = new System.Random();
         var dano = atacante.Ataque - defensora.Defesa;
+        if (player)
+            dano += 20 * Init.qtdPocoesForca;
+        else
+            dano -= 20 * Init.qtdPocoesDefesa;
+
         dano = dano < 0 ? 0 : dano;
         dano = defensora.Defendendo ? dano / 2 : dano;
         dano = Convert.ToInt32(dano * Convert.ToDouble(random.Next(60, 150)) / 100);
@@ -103,6 +110,20 @@ public class Batalha : MonoBehaviour
         defensora.SkillPoints += random.Next(1, 35);
         if (chanceDeEsquiva <= random.Next(1, 100))
             defensora.Vida -= dano;
+    }
+    public void RecuperarVida()
+    {
+        if(Init.qtdPocoes > 0)
+        {
+            Jogador.Vida = Jogador.MaximaVida;
+            Init.qtdPocoes--;
+            PlayerLog.text = "Vida Recuperada!";
+        }
+        else
+        {
+            PlayerLog.text = "Você não possui poções para recuperar vida";
+        }
+        
     }
 
     public void AtacarJogador()

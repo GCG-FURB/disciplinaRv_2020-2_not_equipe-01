@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="DefensePotion2" size="5.000000 5.000000" />
+    <ImageTarget name="Potion2" size="5.000000 5.000000" />
+    <ImageTarget name="PowerPotion2" size="5.000000 5.000000" />
+    <ImageTarget name="DefensePotion" size="10.000000 10.000000" />
+    <ImageTarget name="PowerPotion" size="10.000000 10.000000" />
+    <ImageTarget name="Potion" size="10.000000 10.000000" />
     <ImageTarget name="inimigo3" size="10.000000 10.000000" />
     <ImageTarget name="inimigo2" size="10.000000 10.000000" />
     <ImageTarget name="Inimigo1" size="10.000000 10.000000" />
-    <ImageTarget name="Character3" size="10.000000 10.000000" />
-    <ImageTarget name="Character2" size="10.000000 10.000000" />
-    <ImageTarget name="Character1" size="10.000000 10.000000" />
   </Tracking>
 </QCARConfig>
